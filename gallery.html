@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .gallery-container{
+        position: relative;
+        margin-left: 200px;
+      }
+       
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    border: 1px solid #AF7AC5;
+    
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container */
+  .container {
+    position: relative;
+    display: none;
+  }
+  img.complete-sepia {
+    filter: sepia(100%);
+}
+img.partial-sepia {
+    filter: sepia(30%);
+}
+
+    </style>
+</head>
+<body>
+
+<br>
+<section>
+
+
+    <!-- <article class="content1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis ut culpa at! Expedita at magni natus delectus maxime alias, libero dolorem, repellendus totam odio soluta eius nam aspernatur inventore animi.
+    </article>
+    <br>
+    <article class="content2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis ut culpa at! Expedita at magni natus delectus maxime alias, libero dolorem, repellendus totam odio soluta eius nam aspernatur inventore animi.
+    </article> -->
+ <br><br><br><br> <br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br>
+ <div class="gallery-container"> 
+  <div class="row">
+      <div class="column">
+        <img src="./images/img1.jpeg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="./images/img3.jpeg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="./images/img3.png" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+      </div>
+      
+    </div>
+    <br>
+    <div class="row">
+      <div class="column">
+        <img  src="./images/img4.jpeg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img  src="./images/img5.jpeg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img  src="./images/img6.jpeg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+      </div>
+      
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="./images/img1.jpeg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="./images/img3.jpeg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="./images/img3.png" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+      </div>
+      
+    </div>
+    
+  </div>
+</section>
+
+
+</body>
+
+</html>
